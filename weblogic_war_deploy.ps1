@@ -4,7 +4,7 @@
 $adminUrl = "http://192.168.6.79:7001"
 $username = "weblogic"
 $password = "weblogic@123"
-$appPath = "C:\Users\AKBARALI\.jenkins\workspace\JP_weblogic_deployment\target\devopstool.war"
+$appPath = "C:\Users\AKBARALI\.jenkins\workspace\checkout\target\devopstool.war"
 $target = "AdminServer"
 
 # Deploy the application using weblogic.Deployer
