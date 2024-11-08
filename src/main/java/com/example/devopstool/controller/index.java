@@ -10,21 +10,22 @@ import org.springframework.web.servlet.ModelAndView;
 @RestController
 public class index {
 
-	@RequestMapping("/welcome")
-	public String welcome(HttpSession session) {
-    	
-		return "Hello";
-    }
-	
-	@GetMapping("/AWS")
-	public String HelloAWS()
-	{
-		return "Hello AWS Application";
-	}
+        @RequestMapping("/")
+        public String hello(HttpSession session) {
 
-	@GetMapping("/Vinit")
-	public String HelloVinit()
-	{
-		return "This thing ruuns  my Boi ";
-	}
+                return "Hello, this is devopstool application";
+    }
+
+        @GetMapping("/AWS")
+        public String HelloAWS()
+        {
+                return "Hello AWS Application";
+        }
+
+        @GetMapping("/welcome")
+        public String welcome()
+        {
+                return "Welcome to devopstool application";
+        }
+
 }
